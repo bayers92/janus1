@@ -8,13 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		565F299121A09E1400E0016F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565F299021A09E1400E0016F /* AppDelegate.swift */; };
-		565F299321A09E1400E0016F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565F299221A09E1400E0016F /* FirstViewController.swift */; };
 		565F299521A09E1500E0016F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565F299421A09E1500E0016F /* SecondViewController.swift */; };
 		565F299821A09E1500E0016F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565F299621A09E1500E0016F /* Main.storyboard */; };
 		565F299A21A09E1900E0016F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565F299921A09E1900E0016F /* Assets.xcassets */; };
 		565F299D21A09E1900E0016F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565F299B21A09E1900E0016F /* LaunchScreen.storyboard */; };
 		565F29A821A09E1900E0016F /* JanusHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565F29A721A09E1900E0016F /* JanusHealthTests.swift */; };
 		565F29B321A09E1900E0016F /* JanusHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565F29B221A09E1900E0016F /* JanusHealthUITests.swift */; };
+		565F2A0021A0A1EB00E0016F /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565F29FD21A0A1E100E0016F /* CareKit.framework */; };
+		565F2A0121A0A1EB00E0016F /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 565F29FD21A0A1E100E0016F /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		565F2A0421A0A1F500E0016F /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565F29DC21A0A0A600E0016F /* ResearchKit.framework */; };
+		565F2A0521A0A1F500E0016F /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 565F29DC21A0A0A600E0016F /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5661B59421A0A8E20048CD6F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661B58C21A0A8E20048CD6F /* FirstViewController.swift */; };
+		5661B59621A0A99C0048CD6F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661B59521A0A99C0048CD6F /* RootViewController.swift */; };
+		5661B59921A0AA840048CD6F /* CarePlanStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661B59821A0AA840048CD6F /* CarePlanStoreManager.swift */; };
+		5661B59B21A0AA940048CD6F /* AssessmentTaskFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661B59A21A0AA940048CD6F /* AssessmentTaskFactory.swift */; };
+		5661B59D21A0AB590048CD6F /* CarePlanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661B59C21A0AB590048CD6F /* CarePlanData.swift */; };
+		5661B5A021A0AD600048CD6F /* NSDateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661B59F21A0AD600048CD6F /* NSDateComponents.swift */; };
+		5661B5A221A0AD770048CD6F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661B5A121A0AD770048CD6F /* UIColor.swift */; };
+		5661B5A421A0AD8E0048CD6F /* DataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661B5A321A0AD8E0048CD6F /* DataHelpers.swift */; };
+		5661B5B021A0BA950048CD6F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661B5AF21A0BA950048CD6F /* Activity.swift */; };
+		5661B5B321A0BAFE0048CD6F /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661B5B221A0BAFE0048CD6F /* Assessment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,12 +45,82 @@
 			remoteGlobalIDString = 565F298C21A09E1400E0016F;
 			remoteInfo = JanusHealth;
 		};
+		565F29DB21A0A0A600E0016F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 565F29D521A0A0A600E0016F /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		565F29DD21A0A0A600E0016F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 565F29D521A0A0A600E0016F /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		565F29EE21A0A1C900E0016F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 565F29E821A0A1C900E0016F /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		565F29F021A0A1C900E0016F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 565F29E821A0A1C900E0016F /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5C41C4F04EC00DD65FF;
+			remoteInfo = CareKitTests;
+		};
+		565F29FC21A0A1E100E0016F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 565F29F621A0A1E100E0016F /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		565F29FE21A0A1E100E0016F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 565F29F621A0A1E100E0016F /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5C41C4F04EC00DD65FF;
+			remoteInfo = CareKitTests;
+		};
+		565F2A0221A0A1EB00E0016F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 565F29F621A0A1E100E0016F /* CareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		565F2A0621A0A1F500E0016F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 565F29D521A0A0A600E0016F /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		565F29E721A0A0C700E0016F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				565F2A0521A0A1F500E0016F /* ResearchKit.framework in Embed Frameworks */,
+				565F2A0121A0A1EB00E0016F /* CareKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		565F298D21A09E1400E0016F /* JanusHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JanusHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		565F299021A09E1400E0016F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		565F299221A09E1400E0016F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		565F299421A09E1500E0016F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		565F299721A09E1500E0016F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		565F299921A09E1900E0016F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +132,19 @@
 		565F29AE21A09E1900E0016F /* JanusHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JanusHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		565F29B221A09E1900E0016F /* JanusHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanusHealthUITests.swift; sourceTree = "<group>"; };
 		565F29B421A09E1900E0016F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		565F29D521A0A0A600E0016F /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../../../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		565F29E821A0A1C900E0016F /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../../carekit/CareKit.xcodeproj; sourceTree = "<group>"; };
+		565F29F621A0A1E100E0016F /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../../../carekit/CareKit.xcodeproj; sourceTree = "<group>"; };
+		5661B58C21A0A8E20048CD6F /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		5661B59521A0A99C0048CD6F /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		5661B59821A0AA840048CD6F /* CarePlanStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanStoreManager.swift; sourceTree = "<group>"; };
+		5661B59A21A0AA940048CD6F /* AssessmentTaskFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentTaskFactory.swift; sourceTree = "<group>"; };
+		5661B59C21A0AB590048CD6F /* CarePlanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanData.swift; sourceTree = "<group>"; };
+		5661B59F21A0AD600048CD6F /* NSDateComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDateComponents.swift; sourceTree = "<group>"; };
+		5661B5A121A0AD770048CD6F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		5661B5A321A0AD8E0048CD6F /* DataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelpers.swift; sourceTree = "<group>"; };
+		5661B5AF21A0BA950048CD6F /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		5661B5B221A0BAFE0048CD6F /* Assessment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +152,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565F2A0421A0A1F500E0016F /* ResearchKit.framework in Frameworks */,
+				565F2A0021A0A1EB00E0016F /* CareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +198,19 @@
 			isa = PBXGroup;
 			children = (
 				565F299021A09E1400E0016F /* AppDelegate.swift */,
-				565F299221A09E1400E0016F /* FirstViewController.swift */,
 				565F299421A09E1500E0016F /* SecondViewController.swift */,
+				5661B58C21A0A8E20048CD6F /* FirstViewController.swift */,
+				5661B59521A0A99C0048CD6F /* RootViewController.swift */,
+				5661B5B121A0BAF00048CD6F /* Assessments */,
+				5661B5AE21A0BA890048CD6F /* Activities */,
+				5661B59721A0AA720048CD6F /* Care Plan Store */,
 				565F299621A09E1500E0016F /* Main.storyboard */,
 				565F299921A09E1900E0016F /* Assets.xcassets */,
 				565F299B21A09E1900E0016F /* LaunchScreen.storyboard */,
 				565F299E21A09E1900E0016F /* Info.plist */,
+				5661B59E21A0AD550048CD6F /* Utilities */,
+				565F29E821A0A1C900E0016F /* CareKit.xcodeproj */,
+				565F29C021A0A07700E0016F /* Linked Frameworks */,
 			);
 			path = JanusHealth;
 			sourceTree = "<group>";
@@ -128,6 +233,78 @@
 			path = JanusHealthUITests;
 			sourceTree = "<group>";
 		};
+		565F29C021A0A07700E0016F /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				565F29F621A0A1E100E0016F /* CareKit.xcodeproj */,
+				565F29D521A0A0A600E0016F /* ResearchKit.xcodeproj */,
+			);
+			path = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		565F29D621A0A0A600E0016F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				565F29DC21A0A0A600E0016F /* ResearchKit.framework */,
+				565F29DE21A0A0A600E0016F /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		565F29E921A0A1C900E0016F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				565F29EF21A0A1C900E0016F /* CareKit.framework */,
+				565F29F121A0A1C900E0016F /* CareKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		565F29F721A0A1E100E0016F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				565F29FD21A0A1E100E0016F /* CareKit.framework */,
+				565F29FF21A0A1E100E0016F /* CareKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5661B59721A0AA720048CD6F /* Care Plan Store */ = {
+			isa = PBXGroup;
+			children = (
+				5661B59C21A0AB590048CD6F /* CarePlanData.swift */,
+				5661B59821A0AA840048CD6F /* CarePlanStoreManager.swift */,
+				5661B59A21A0AA940048CD6F /* AssessmentTaskFactory.swift */,
+			);
+			path = "Care Plan Store";
+			sourceTree = "<group>";
+		};
+		5661B59E21A0AD550048CD6F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5661B59F21A0AD600048CD6F /* NSDateComponents.swift */,
+				5661B5A121A0AD770048CD6F /* UIColor.swift */,
+				5661B5A321A0AD8E0048CD6F /* DataHelpers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5661B5AE21A0BA890048CD6F /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				5661B5AF21A0BA950048CD6F /* Activity.swift */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		5661B5B121A0BAF00048CD6F /* Assessments */ = {
+			isa = PBXGroup;
+			children = (
+				5661B5B221A0BAFE0048CD6F /* Assessment.swift */,
+			);
+			path = Assessments;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +315,13 @@
 				565F298921A09E1400E0016F /* Sources */,
 				565F298A21A09E1400E0016F /* Frameworks */,
 				565F298B21A09E1400E0016F /* Resources */,
+				565F29E721A0A0C700E0016F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				565F2A0321A0A1EB00E0016F /* PBXTargetDependency */,
+				565F2A0721A0A1F500E0016F /* PBXTargetDependency */,
 			);
 			name = JanusHealth;
 			productName = JanusHealth;
@@ -218,6 +398,20 @@
 			mainGroup = 565F298421A09E1400E0016F;
 			productRefGroup = 565F298E21A09E1400E0016F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 565F29F721A0A1E100E0016F /* Products */;
+					ProjectRef = 565F29F621A0A1E100E0016F /* CareKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 565F29E921A0A1C900E0016F /* Products */;
+					ProjectRef = 565F29E821A0A1C900E0016F /* CareKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 565F29D621A0A0A600E0016F /* Products */;
+					ProjectRef = 565F29D521A0A0A600E0016F /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				565F298C21A09E1400E0016F /* JanusHealth */,
@@ -226,6 +420,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		565F29DC21A0A0A600E0016F /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 565F29DB21A0A0A600E0016F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		565F29DE21A0A0A600E0016F /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 565F29DD21A0A0A600E0016F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		565F29EF21A0A1C900E0016F /* CareKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKit.framework;
+			remoteRef = 565F29EE21A0A1C900E0016F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		565F29F121A0A1C900E0016F /* CareKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitTests.xctest;
+			remoteRef = 565F29F021A0A1C900E0016F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		565F29FD21A0A1E100E0016F /* CareKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKit.framework;
+			remoteRef = 565F29FC21A0A1E100E0016F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		565F29FF21A0A1E100E0016F /* CareKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitTests.xctest;
+			remoteRef = 565F29FE21A0A1E100E0016F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		565F298B21A09E1400E0016F /* Resources */ = {
@@ -260,8 +499,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				565F299521A09E1500E0016F /* SecondViewController.swift in Sources */,
+				5661B59921A0AA840048CD6F /* CarePlanStoreManager.swift in Sources */,
 				565F299121A09E1400E0016F /* AppDelegate.swift in Sources */,
-				565F299321A09E1400E0016F /* FirstViewController.swift in Sources */,
+				5661B59621A0A99C0048CD6F /* RootViewController.swift in Sources */,
+				5661B5A221A0AD770048CD6F /* UIColor.swift in Sources */,
+				5661B59D21A0AB590048CD6F /* CarePlanData.swift in Sources */,
+				5661B59421A0A8E20048CD6F /* FirstViewController.swift in Sources */,
+				5661B5A421A0AD8E0048CD6F /* DataHelpers.swift in Sources */,
+				5661B5A021A0AD600048CD6F /* NSDateComponents.swift in Sources */,
+				5661B5B321A0BAFE0048CD6F /* Assessment.swift in Sources */,
+				5661B5B021A0BA950048CD6F /* Activity.swift in Sources */,
+				5661B59B21A0AA940048CD6F /* AssessmentTaskFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +541,16 @@
 			isa = PBXTargetDependency;
 			target = 565F298C21A09E1400E0016F /* JanusHealth */;
 			targetProxy = 565F29AF21A09E1900E0016F /* PBXContainerItemProxy */;
+		};
+		565F2A0321A0A1EB00E0016F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CareKit;
+			targetProxy = 565F2A0221A0A1EB00E0016F /* PBXContainerItemProxy */;
+		};
+		565F2A0721A0A1F500E0016F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 565F2A0621A0A1F500E0016F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -435,6 +693,7 @@
 		565F29B821A09E1900E0016F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P682U8BY35;
@@ -453,6 +712,7 @@
 		565F29B921A09E1900E0016F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P682U8BY35;
